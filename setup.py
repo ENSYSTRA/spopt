@@ -54,6 +54,7 @@ def setup_package():
         license="3-Clause BSD",
         packages=[package],
         install_requires=install_reqs,
+        include_package_data=True,
         extras_require=extras_reqs,
         zip_safe=False,
         cmdclass={"build.py": build_py},
